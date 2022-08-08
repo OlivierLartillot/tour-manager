@@ -8,13 +8,16 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Page d'accueil ✅</h1>
+<div class="container-fluid p-3 bg-info">
 
-    <p>Ici j'aimerais bien aller à la page d'essai <a href="{{ path('app_essai') }}">Page d'essai</a></p>
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/tour-manager/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/tour-manager/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
+    <div class="container-fluid bg-dark text-light">
+        <h1>Page d'accueil</h1>
+        <p class="text-uppercase">J'utilise une classe bootstrap pour mettre le texte en uppercase</p>
+        <p>Ici j'aimerais bien aller à la page d'essai <a href="{{ path('app_essai') }}">Page d'essai</a></p>
+    </div>
+
+
+
+
 </div>
 {% endblock %}
